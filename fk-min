@@ -1,1 +1,0 @@
-html {--full-height: 100vh;@supports (height: 100svh) {--full-height: 100svh;}box-sizing: border-box;height: var(--full-height);overflow: hidden;-webkit-text-size-adjust: 100%;text-size-adjust: 100%;& *, *::before, *::after {margin: 0;padding: 0;box-sizing: inherit;}& body {position: fixed;z-index: 0;width: 100vw;height: var(--full-height);overflow: hidden;}}
