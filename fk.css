@@ -1,0 +1,41 @@
+/* 
+    Fixed Kanvas CSS Boilerplate v1.7
+
+    A simple CSS boilerplate that forces a webpage into a fixed, viewport-sized and scroll-free position, providing a consistent viewport ideal for artistic and non-standard web projects. 
+    Uses spec-compliant modern CSS nesting and at-ruling.
+
+    Don't forget to include <meta name="viewport" content="width=device-width, initial-scale=1.0"> in your page <head>!
+
+    Author: https://github.com/kryptocore | https://kry.pt/
+    License: MIT License
+*/
+
+html { 
+    --full-height: 100vh;
+
+    @supports (height: 100svh) {
+        --full-height: 100svh;
+    }
+
+    box-sizing: border-box;
+    height: var(--full-height);
+    overflow: hidden;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+
+    & *,
+    *::before,
+    *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: inherit;
+    }
+
+    & body { 
+        position: fixed;
+        z-index: 0;
+        width: 100vw;
+        height: var(--full-height);
+        overflow: hidden;
+    }
+}
